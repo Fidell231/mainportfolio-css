@@ -213,7 +213,7 @@
 /* Hero Section */
 .hero {
   background: black;
-
+margin-top: 0px;
   padding: 150px 50;
 }
 
@@ -299,12 +299,17 @@
   .hero__description {
     font-size: 29px;
   }
+  .hero__container {
+    margin: 0 auto;
+    padding: 0px;
+  }
 }
 
 /* About Section */
 .main {
   background-color: black;
   padding: 10rem 0;
+  margin-top: 0px;
 }
 
 .main__container {
@@ -317,7 +322,7 @@
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  padding: 0 20px;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   animation: gradient 15s ease infinite;
 }
@@ -529,6 +534,7 @@
   align-items: center;
   height: 100%;
   padding: 10rem 10;
+  margin-top: 0px;
 }
 
 .services h1 {
@@ -542,7 +548,10 @@
   margin-bottom: 5rem;
   font-size: 2.5rem;
 }
-
+.services h5 {
+  color: #ffff;
+  margin-bottom: 2rem;
+}
 .services__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -637,8 +646,8 @@ h2 {
 .card:nth-child(2) .face.face2 {
   background-image: linear-gradient(
     40deg,
-    #fc00ff 0%,
-    #00fffc 45%,
+    #065f6b 0%,
+    #b24ad1 45%,
     #fffc00 100%
   );
   border-radius: 15px;
@@ -684,6 +693,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0px;
 }
 
 #footer__logo {
