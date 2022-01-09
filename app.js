@@ -16,22 +16,31 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
   const servicesMenu = document.querySelector("#services-page");
+  const projectsMenu = document.querySelector("#projects-page");
   let scrollPos = window.scrollY;
-  // console.log(scrollPos);
+  
 
   // adds 'highlight' class to my menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
     homeMenu.classList.add("highlight");
     aboutMenu.classList.remove("highlight");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+  } else if (window.innerWidth > 960 && scrollPos < 1300) {
     aboutMenu.classList.add("highlight");
     homeMenu.classList.remove("highlight");
     servicesMenu.classList.remove("highlight");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 2345) {
+  } else if (window.innerWidth > 960 && scrollPos < 1850) {
     servicesMenu.classList.add("highlight");
+    homeMenu.classList.remove("highlight");
     aboutMenu.classList.remove("highlight");
+    projectsMenu.classList.remove("highlight");
+    return;
+
+  } else if (window.innerWidth > 960 && scrollPos < 2345) {
+    projectsMenu.classList.add("highlight");
+    aboutMenu.classList.remove("highlight");
+    servicesMenu.classList.remove("highlight");
     return;
   }
 
@@ -116,4 +125,3 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
-
