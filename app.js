@@ -18,7 +18,6 @@ const highlightMenu = () => {
   const servicesMenu = document.querySelector("#services-page");
   const projectsMenu = document.querySelector("#projects-page");
   let scrollPos = window.scrollY;
-  
 
   // adds 'highlight' class to my menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
@@ -36,7 +35,6 @@ const highlightMenu = () => {
     aboutMenu.classList.remove("highlight");
     projectsMenu.classList.remove("highlight");
     return;
-
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     projectsMenu.classList.add("highlight");
     aboutMenu.classList.remove("highlight");
